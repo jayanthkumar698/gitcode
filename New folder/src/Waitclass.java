@@ -23,6 +23,7 @@ public class Waitclass {
 		//explicit wait
 		WebDriverWait w = new WebDriverWait(driver,Duration.ofSeconds(5));
 		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".href")));
+		w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("dfad"));
 		
 		//FluentWait
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(10).pollingEvery().ignoring(NoSuchElementException.class);
